@@ -42,7 +42,7 @@ form button { margin-left:80px; display: inline-block; padding: 2px 10px 2px 10p
   font-size: 13px;
   color: #333333;
   font-weight: bold;
-  border: 1px solid #333333;
+  border: 1px solid #CCCCCC;
 }
 
 img {
@@ -50,12 +50,14 @@ img {
 }
 
 .image-wrapper {
-
-  padding: 4px;
-  border-right: 1px solid #333333;
+  padding: 5px;
+  border-right: 1px solid #CCCCCC;
+  height: 86px;
+  width: 86px;
 }
 
 .name-wrapper {
+  padding-left:10%;
   padding-top:15%;
 }
 
