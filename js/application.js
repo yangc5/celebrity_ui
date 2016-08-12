@@ -33,6 +33,8 @@ $(document).ready(function(){
     event.preventDefault();
     name = $('input[name="name"]').val();
     imageUrl = $('input[name="photo_url"]').val();
+    $('input[name="name"]').val('');
+    $('input[name="photo_url"]').val('');
     card = makeCard(name, imageUrl);
     $('.cards').prepend(card);
   });
