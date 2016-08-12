@@ -23,9 +23,14 @@ $(document).ready(function(){
     $('.cards').append(card);
   });
 
-  $('.card').hover(function(){
-    $(this).find('.close').css('visibility', 'visible');
+  $('.cards').on('mouseenter', '.card', function(){
+      $(this).find('.close').addClass('hover');
   });
+
+  $('.cards').on('mouseleave', '.card', function(){
+      $(this).find('.close').removeClass('hover');
+  });
+
 
 
 
