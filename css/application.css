@@ -38,19 +38,28 @@ img {
 
 .image-wrapper {
   padding: 5px;
+  height: 150px;
+  width: 150px;
+  border-right: 1px solid #CCCCCC;
 }
 
 .name-wrapper {
-  padding-left:10%;
+  padding-left:15%;
   padding-top:15%;
 }
 
-.cards:after,
-.row:after {
+.cards:after {
   content: "";
   display: table;
   clear: both;
 }
+
+@media (min-width: 500px) {
+  .name-wrapper {
+    padding-left:0;
+  }
+}
+
 
 /* For devices larger than 760px */
 @media (min-width: 760px) {
@@ -70,6 +79,9 @@ img {
   .image-wrapper {
     height: 86px;
     width: 86px;
-    border-right: 1px solid #CCCCCC;
+  }
+
+  .name-wrapper {
+    padding-left:10%;
   }
 }
