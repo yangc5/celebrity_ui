@@ -21,5 +21,12 @@ $(document).ready(function(){
     var card = '<div class="card four columns"> <div class="five columns"> <div class="image-wrapper"> <img src="'+imageUrl+'" onerror="this.src=\'/img/default.png\'" alt=""> </div> </div> <div class="seven columns"> <div class="name-wrapper"> '+name+' </div> </div> <img class="close" src="img/close.png" alt=""> </div>';
 
     $('.cards').append(card);
-  })
+  });
+
+  $('.card').hover(function(){
+    $(this).find('.close').css('visibility', 'visible');
+  });
+
+
+
 });

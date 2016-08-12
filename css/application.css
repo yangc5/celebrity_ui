@@ -42,7 +42,7 @@ form button { margin-left:80px; display: inline-block; padding: 2px 10px 2px 10p
   margin-right:5px;
   height: 10px;
   width: 10px;
-  display: none;
+  visibility: hidden;
 }
 
 img {
