@@ -10,15 +10,16 @@ form button { margin-left:80px; display: inline-block; padding: 2px 10px 2px 10p
 /* Card font: 13px and #333333 */
 
 /* Put your styles here */
-.column,
 .columns {
   width: 100%;
   float: left;
   box-sizing: border-box;
 }
+
 .five.columns {
   width: 39.3333333333%;
 }
+
 .seven.columns {
   width: 56.6666666667%;
 }
@@ -66,24 +67,27 @@ img {
   clear: both;
 }
 
+/* For devices larger than 500px */
 @media (min-width: 500px) {
   .name-wrapper {
     padding-left:0;
   }
 }
 
-
 /* For devices larger than 760px */
 @media (min-width: 760px) {
-  #main-content { width:705px; border:1px solid #d3d3d3; }
-  .column,
+  #main-content {
+    width:705px; border:1px solid #d3d3d3;
+  }
+
   .columns {
     margin-left: 4%;
   }
-  .column:first-child,
+
   .columns:first-child {
     margin-left: 0;
   }
+
   .four.columns {
     width: 30.6666666667%
   }
